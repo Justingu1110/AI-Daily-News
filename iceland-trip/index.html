@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冰島環島旅行手冊</title>
+<meta name="description" content="8 天 7 夜冰島自駕行程規劃：黃金圈、南岸冰河、蛇釜半島與藍湖溫泉，含交通、打包與預算建議。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3f5f3;
+    --surface: #ffffff;
+    --surface-2: #e7ece7;
+    --ink: #1a2420;
+    --ink-soft: #4b5850;
+    --ink-faint: #7c887f;
+    --accent: #2f6e5c;
+    --accent-soft: #e3ece8;
+    --accent-2: #3d6a8a;
+    --accent-2-soft: #e2ebf0;
+    --warm: #b85c2e;
+    --warm-soft: #f3e6dd;
+    --line: #d6ded6;
+    --shadow: 0 1px 2px rgba(20, 30, 25, 0.04), 0 8px 24px rgba(20, 30, 25, 0.05);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e1412;
+      --surface: #161d1a;
+      --surface-2: #1e2622;
+      --ink: #e7ece7;
+      --ink-soft: #a8b5ac;
+      --ink-faint: #74827a;
+      --accent: #6fcba8;
+      --accent-soft: #1b2f28;
+      --accent-2: #7fb3d6;
+      --accent-2-soft: #1a2733;
+      --warm: #e08a52;
+      --warm-soft: #2e2019;
+      --line: #29332e;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 8px 28px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0e1412;
+    --surface: #161d1a;
+    --surface-2: #1e2622;
+    --ink: #e7ece7;
+    --ink-soft: #a8b5ac;
+    --ink-faint: #74827a;
+    --accent: #6fcba8;
+    --accent-soft: #1b2f28;
+    --accent-2: #7fb3d6;
+    --accent-2-soft: #1a2733;
+    --warm: #e08a52;
+    --warm-soft: #2e2019;
+    --line: #29332e;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 8px 28px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Work Sans", "Noto Sans TC", "PingFang TC", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- Header ---------- */
+
+  header.hero {
+    padding: 72px 0 40px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1.title {
+    font-size: clamp(34px, 5.5vw, 52px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    margin: 18px 0 0;
+    max-width: 60ch;
+    color: var(--ink-soft);
+    font-size: 17px;
+  }
+
+  .stat-strip {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .stat {
+    padding: 18px 20px;
+    border-right: 1px solid var(--line);
+  }
+  .stat:last-child { border-right: none; }
+
+  .stat-label {
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 6px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .stat-value small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Section shell ---------- */
+
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .section-head h2 { font-size: 26px; }
+  .section-note { color: var(--ink-faint); font-size: 14px; max-width: 40ch; }
+
+  /* ---------- Route overview ---------- */
+
+  .route {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+  }
+
+  .route-stop {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13.5px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+    color: var(--ink);
+  }
+
+  .route-arrow {
+    color: var(--ink-faint);
+    padding: 0 10px;
+    font-size: 14px;
+    flex: 0 0 auto;
+  }
+
+  /* ---------- Day cards ---------- */
+
+  .itinerary { position: relative; }
+
+  .day-card {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .day-card:last-child { padding-bottom: 0; }
+
+  .day-rail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .day-rail::before {
+    content: "";
+    position: absolute;
+    top: 46px;
+    bottom: -40px;
+    width: 1px;
+    background: var(--line);
+  }
+  .day-card:last-child .day-rail::before { display: none; }
+
+  .day-num {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--line);
+    z-index: 1;
+  }
+
+  .day-body {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 26px;
+    box-shadow: var(--shadow);
+  }
+
+  .day-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .day-title { font-size: 20px; }
+
+  .day-drive {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--accent-2);
+    background: var(--accent-2-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .day-region {
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 16px;
+  }
+
+  .day-list {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  .day-list li {
+    padding-left: 16px;
+    position: relative;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+
+  .day-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .day-list li strong { color: var(--ink); font-weight: 500; }
+
+  .day-tip {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    background: var(--surface-2);
+    border-radius: 10px;
+    padding: 10px 14px;
+    border-left: 2px solid var(--warm);
+  }
+  .day-tip strong { color: var(--warm); font-weight: 500; }
+
+  /* ---------- Two-column info blocks ---------- */
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card h3 .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+
+  .plain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 9px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+  .plain-list li { padding-left: 14px; position: relative; }
+  .plain-list li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- Budget table ---------- */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  th {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+  }
+
+  td.num { font-family: "IBM Plex Mono", monospace; color: var(--ink); white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+
+  /* ---------- Safety callout ---------- */
+
+  .callout {
+    background: var(--warm-soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 26px;
+  }
+  .callout h3 { color: var(--warm); font-size: 16px; margin-bottom: 12px; }
+  .callout p { margin: 0 0 10px; color: var(--ink-soft); font-size: 14.5px; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout code {
+    font-family: "IBM Plex Mono", monospace;
+    background: var(--surface);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 40px 0 0;
+    color: var(--ink-faint);
+    font-size: 13px;
+  }
+
+  @media (max-width: 720px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat { border-bottom: 1px solid var(--line); }
+    .stat:nth-child(2n) { border-right: none; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .day-card { grid-template-columns: 40px 1fr; gap: 14px; }
+    .day-num { width: 34px; height: 34px; font-size: 11px; }
+    .day-rail::before { top: 36px; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .day-body, .card { transition: box-shadow 0.2s ease; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Ísland · 自駕行程規劃</p>
+    <h1 class="title">冰島環島旅行手冊</h1>
+    <p class="subtitle">從雷克雅維克出發，走一圈黃金圈、南岸冰河與蛇釜半島，最後在藍湖溫泉收尾。這是一份適合初訪者的 8 天 7 夜參考行程，日期與節奏都可依實際天數調整。</p>
+
+    <div class="stat-strip">
+      <div class="stat">
+        <div class="stat-label">行程天數</div>
+        <div class="stat-value mono">8 <small>天 7 夜</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">總駕駛距離</div>
+        <div class="stat-value mono">約 1,150 <small>公里</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">建議季節</div>
+        <div class="stat-value">6–8 月 <small>／ 9–10 月看極光</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">建議車型</div>
+        <div class="stat-value">4x4 休旅車</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="route">
+    <div class="section-head">
+      <h2>路線總覽</h2>
+      <p class="section-note">以雷克雅維克為起訖點的順時針環繞路線</p>
+    </div>
+    <div class="route">
+      <span class="route-stop">雷克雅維克</span><span class="route-arrow">→</span>
+      <span class="route-stop">黃金圈</span><span class="route-arrow">→</span>
+      <span class="route-stop">南岸・維克</span><span class="route-arrow">→</span>
+      <span class="route-stop">傑古沙龍冰河湖</span><span class="route-arrow">→</span>
+      <span class="route-stop">南岸返程</span><span class="route-arrow">→</span>
+      <span class="route-stop">蛇釜半島</span><span class="route-arrow">→</span>
+      <span class="route-stop">雷克雅維克市區</span><span class="route-arrow">→</span>
+      <span class="route-stop">藍湖溫泉</span>
+    </div>
+  </section>
+
+  <section id="itinerary">
+    <div class="section-head">
+      <h2>每日行程</h2>
+      <p class="section-note">每張卡片標註與前一天的建議駕駛距離</p>
+    </div>
+
+    <div class="itinerary">
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">01</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">抵達雷克雅維克</h3>
+            <span class="day-drive">機場取車 · 45 分鐘進市區</span>
+          </div>
+          <div class="day-region">Reykjavík</div>
+          <ul class="day-list">
+            <li><strong>哈爾格林姆教堂</strong>登塔俯瞰彩色屋頂市區</li>
+            <li><strong>太陽航海者</strong>雕塑與海濱步道散步</li>
+            <li>老港口區晚餐，嘗試冰島海鮮湯</li>
+            <li>在機場或市區租車櫃檯取車，熟悉左駕右行</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>抵達當天多預留緩衝時間，跨洋班機常晚點，且冰島超市 Bónus 晚上多在 18:30 前打烊，第一天可先採買隔日路上零食。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">02</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">黃金圈一日</h3>
+            <span class="day-drive">約 230 公里</span>
+          </div>
+          <div class="day-region">Golden Circle</div>
+          <ul class="day-list">
+            <li><strong>辛格維利爾國家公園</strong>行走於美洲與歐亚板塊交界的裂谷</li>
+            <li><strong>蓋歇爾間歇泉</strong>看 Strokkur 每 5–10 分鐘噴發一次</li>
+            <li><strong>古佛斯瀑布</strong>階梯狀雙層瀑布，近距離感受水氣</li>
+            <li>凱瑞德火山口湖，或傍晚順道泡 Secret Lagoon</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>Strokkur 噴發前水面會先鼓起，站上風處拍照才不會被噴濕。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">03</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">南岸瀑布與黑沙灘</h3>
+            <span class="day-drive">約 180 公里</span>
+          </div>
+          <div class="day-region">South Coast → Vík</div>
+          <ul class="day-list">
+            <li><strong>塞里雅蘭瀑布</strong>可走到瀑布後方欣賞水簾</li>
+            <li><strong>斯科加瀑布</strong>沿階梯登頂看全景與彩虹</li>
+            <li><strong>雷尼斯黑沙灘</strong>柱狀玄武岩洞穴，注意離岸浪不可靠近海邊</li>
+            <li>入住維克小鎮，眺望教堂山與海蝕柱</li>
+          </ul>
+          <div class="day-tip"><strong>安全提醒：</strong>雷尼斯黑沙灘的「隱形浪」曾造成意外，務必遵守警示牌，不要背對大海。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">04</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">冰河湖與鑽石沙灘</h3>
+            <span class="day-drive">約 190 公里</span>
+          </div>
+          <div class="day-region">Jökulsárlón & Diamond Beach</div>
+          <ul class="day-list">
+            <li>途經 <strong>Fjaðrárgljúfur 峽谷</strong>，之字形步道俯瞰綠色峽谷</li>
+            <li><strong>傑古沙龍冰河湖</strong>搭乘水陸兩用船穿梭浮冰（夏季限定）</li>
+            <li><strong>鑽石沙灘</strong>拍攝黑沙灘上的透明浮冰</li>
+            <li>時間充裕可安排 Skaftafell 冰川健行（需嚮導）</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>冰川健行與冰洞行程須提前一至兩週預訂，旺季常額滿。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">05</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">南岸返程日</h3>
+            <span class="day-drive">約 370 公里</span>
+          </div>
+          <div class="day-region">Back toward Reykjavík</div>
+          <ul class="day-list">
+            <li>原路折返，補拍第一趟錯過的景點或放慢腳步</li>
+            <li>可繞道 <strong>Seljavallalaug</strong> 山谷中的老露天溫泉池</li>
+            <li>路途較長的一天，安排 1–2 個休息站喝咖啡</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>加油站在南岸鄉間分布稀疏，油量低於一半就建議加滿。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">06</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">蛇釜半島一日遊</h3>
+            <span class="day-drive">約 340 公里（來回）</span>
+          </div>
+          <div class="day-region">Snæfellsnes Peninsula</div>
+          <ul class="day-list">
+            <li><strong>教堂山</strong>（Kirkjufell）冰島最上鏡的獨立山峰</li>
+            <li><strong>阿爾納斯塔皮</strong>海岸步道，玄武岩拱門與海鳥懸崖</li>
+            <li><strong>黑教堂</strong>（Búðakirkja）孤立在熔岩平原上的黑色木教堂</li>
+            <li>時間允許可登斯奈山冰河腳下走一小段</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>半島常被稱為「冰島縮影」，天氣變化快，出發前查 vedur.is 天氣預報。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">07</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">雷克雅維克深度遊</h3>
+            <span class="day-drive">市區步行</span>
+          </div>
+          <div class="day-region">Reykjavík</div>
+          <ul class="day-list">
+            <li>Laugavegur 主街購物與咖啡館，補買紀念品</li>
+            <li>Harpa 音樂廳玻璃立面拍照，或參加內部導覽</li>
+            <li>Grótta 半島看夕陽，退潮時可走到燈塔</li>
+            <li>秋冬季節安排在此夜晚追極光，市區光害較少的北岸最佳</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>極光預報可查 en.vedur.is 的 aurora forecast，KP 值與雲量缺一不可。</div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-rail"><div class="day-num">08</div></div>
+        <div class="day-body">
+          <div class="day-top">
+            <h3 class="day-title">藍湖溫泉與賦歸</h3>
+            <span class="day-drive">約 50 公里到機場</span>
+          </div>
+          <div class="day-region">Blue Lagoon → Departure</div>
+          <ul class="day-list">
+            <li><strong>藍湖溫泉</strong>浸泡在乳藍色矽泥地熱水中放鬆全身</li>
+            <li>敷面膜、喝一杯溫泉吧的果昔，安排 2–3 小時體驗</li>
+            <li>藍湖距凱夫拉維克機場僅 20 分鐘車程，適合安排在離境前</li>
+          </ul>
+          <div class="day-tip"><strong>提醒：</strong>藍湖需提前線上預約時段，旺季常於數週前售罄，建議與機票同時預訂。</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="practical">
+    <div class="section-head">
+      <h2>行前準備</h2>
+      <p class="section-note">打包、路況與預算的實用清單</p>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:20px;">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--accent)"></span>夏季打包（6–8 月）</h3>
+        <ul class="plain-list">
+          <li>防水外套與防風保暖層，日夜溫差可達 10°C</li>
+          <li>健走鞋，部分景點步道濕滑多石</li>
+          <li>泳衣與快乾毛巾，隨時可跳進溫泉</li>
+          <li>眼罩：夏至前後接近永晝，方便入睡</li>
+          <li>太陽眼鏡，冰川與雪地反光強烈</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--accent-2)"></span>冬季打包（11–3 月）</h3>
+        <ul class="plain-list">
+          <li>羽絨外套、防水手套與毛帽</li>
+          <li>鞋底冰爪，人行道與步道容易結冰</li>
+          <li>頭燈或手電筒，日照時間僅 4–6 小時</li>
+          <li>保暖中層＋防水外層的洋蔥式穿法</li>
+          <li>行動電源，低溫會加速手機電量流失</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:20px;">
+      <h3><span class="dot" style="background:var(--warm)"></span>預估花費（每人，不含機票）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>項目</th><th>參考金額</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>租車（4x4，含全險）</td><td class="num">ISK 15,000 / 天</td><td>雙人分攤更划算</td></tr>
+            <tr><td>住宿（中價位雙人房）</td><td class="num">ISK 20,000 / 晚</td><td>旅館外小鎮選擇較少，建議提早訂</td></tr>
+            <tr><td>餐飲</td><td class="num">ISK 6,000–9,000 / 天</td><td>超市自炊可壓低至半價</td></tr>
+            <tr><td>藍湖溫泉門票</td><td class="num">ISK 10,990 起</td><td>依方案含毛巾、面膜不同</td></tr>
+            <tr><td>油錢</td><td class="num">ISK 25,000 / 全程</td><td>依實際里程與油價浮動</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="callout">
+      <h3>駕駛與天氣提醒</h3>
+      <p>出發前一晚查 <code>road.is</code> 路況與 <code>vedur.is</code> 天氣，冰島天氣一日多變，強風、暴雪可能臨時封路。</p>
+      <p>單線橋（einbreið brú）需禮讓對向來車先過；鄉間道路常有羊群穿越，保持警覺並適當減速。</p>
+      <p>F 開頭的山區道路僅夏季開放且必須使用 4x4，一般轎車保險不涵蓋此類道路的損壞。</p>
+      <p>柏油路速限 90 km/h，碎石路 80 km/h；碎石路面易打滑，會車時建議減速並靠右。</p>
+    </div>
+  </section>
+
+  <footer>
+    行程為建議版本，實際節奏請依天數、季節與同行成員狀況調整。
+  </footer>
+
+</div>
+</body>
+</html>
